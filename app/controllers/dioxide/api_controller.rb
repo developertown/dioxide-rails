@@ -19,8 +19,6 @@ module Dioxide
     unloadable
   
     def call
-      puts "Here's mount_at?  #{Dioxide::Engine::config.mount_at}"
-      
       req = RPCRequest.new(request.body)
     
       begin
