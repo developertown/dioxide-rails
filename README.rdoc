@@ -1,0 +1,42 @@
+= Dioxide RPC Engine for Ruby on Rails
+
+This is a server-side library designed for use with mobile applications built with Dioxide-Mobile ( https://github.com/developertown/dioxide-mobile ).
+It provides a framework for RPC services that follow the Dioxide RPC protocol (Protocol documentation coming soon).
+
+== Installation
+
+1. Include the dioxide_rails gem in your Gemfile:
+
+    gem 'dioxide_rails', '~> 0.1'
+
+2. Update the bundler managed gems:
+
+    $ bundle install 
+
+3. Generate the necessary initializer:
+
+    $ rails g dioxide_rails
+        create  config/initializers/dioxide_rails.rb
+
+4. Configure Dioxide via the initializer.  Configuration documentation is specified within config/initializers/dioxide_rails.rb
+
+== Service Implementation
+
+Handlers are simply methods that take a Dioxide::RPCRequest object as a parameter, and return an instance of Dioxide::RPCResponse.
+Dioxide::RPCResponse instances are automatically created by calling #new_response on an Dioxide::RPCRequest instance.
+The simplest implementation would look like:
+
+    class MyHandler
+      def ping(req)
+        res = req.new_response
+        return res
+      end
+    end
+
+Dixoide::RPCResponses default to a status_code of 200 and message of "OK", so this simple handler, in effect, implements a
+ping service.
+
+== License
+
+Copyright 2011 Developer Town
+Released under the Apache 2.0 License
