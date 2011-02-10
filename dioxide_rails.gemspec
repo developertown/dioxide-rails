@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{dioxide_rails}
-  s.version = "0.1.1"
+  s.version = "0.1.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Jason Vasquez"]
@@ -24,7 +24,8 @@ Gem::Specification.new do |s|
     "lib/dioxide_rails/rpc_response.rb",
     "lib/engine.rb",
     "lib/rails/generators/dioxide_rails/dioxide_rails_generator.rb",
-    "lib/rails/generators/dioxide_rails/templates/initializer.rb"
+    "lib/rails/generators/dioxide_rails/templates/initializer.rb",
+    "lib/rails/railties/tasks.rake"
   ]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.5.0}
