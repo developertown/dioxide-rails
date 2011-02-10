@@ -1,7 +1,7 @@
 = Dioxide RPC Engine for Ruby on Rails
 
 This is a server-side library designed for use with mobile applications built with Dioxide-Mobile ( https://github.com/developertown/dioxide-mobile ).
-It provides a framework for RPC services that follow the Dioxide RPC protocol (Protocol documentation coming soon).
+It provides a framework for RPC services that follow the Dioxide RPC protocol.  Protocol documentation can be found here: https://github.com/developertown/dioxide-rails/wiki/Dioxide-RPC-Protocol
 
 == Installation
 
